@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddDoctorScreen"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp">
+
+        <!-- Main Heading -->
+        <TextView
+            android:id="@+id/Mainheadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Doctor Details"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#7876E1" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/Mainheadding"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/docprofile" />
+
+        <TextView
+            android:id="@+id/instrcution"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Please Provide correct email Address to verify person"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/instrcution"
+            android:layout_marginTop="16dp"
+        />
+
+        <EditText
+            android:id="@+id/emailin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@gmail.com"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/email" />
+
+        <!-- First Name -->
+        <TextView
+            android:id="@+id/firstnametext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/emailin"
+            android:layout_marginTop="16dp"
+        />
+
+        <EditText
+            android:id="@+id/etfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dr Robert"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/firstnametext" />
+
+        <!-- Last Name -->
+        <TextView
+            android:id="@+id/lastnametext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/etfirstname"
+            android:layout_marginTop="16dp"
+
+        />
+
+        <EditText
+            android:id="@+id/etlastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastnametext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Smith"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Contact Number -->
+        <TextView
+            android:id="@+id/contacttext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/etlastname"
+            android:layout_marginTop="16dp"
+        />
+
+        <EditText
+            android:id="@+id/etconnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+94-11-2456788"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/contacttext" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etconnum"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#020215"
+            android:padding="10dp"
+            android:text="Update Information"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSubmit"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/delete_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:text="Delete Information"
+            app:backgroundTint="#E91E63"
+            android:textColor="@color/white"
+            android:drawableTint="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </RelativeLayout>
+</ScrollView>
