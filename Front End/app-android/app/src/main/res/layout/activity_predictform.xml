@@ -54,6 +54,7 @@
             android:inputType="number"
             android:layout_marginBottom="16dp"
             android:padding="10dp"
+            android:textColorHint="#4E4E4E"
             tools:ignore="HardcodedText"
             android:background="@drawable/edittext_border"
             android:layout_below="@id/Age" />
@@ -78,7 +79,7 @@
             android:hint="120/80 mmHg"
             android:inputType="number"
             android:layout_marginBottom="16dp"
-
+            android:textColorHint="#4E4E4E"
             android:padding="10dp"
             tools:ignore="HardcodedText"
             android:background="@drawable/edittext_border"
@@ -108,6 +109,7 @@
             android:hint="200 mg/dL"
             android:inputType="textEmailAddress"
             android:padding="10dp"
+            android:textColorHint="#4E4E4E"
             tools:ignore="HardcodedText" />
 
         <!-- Contact Number -->
@@ -131,6 +133,7 @@
             android:inputType="number"
             android:layout_marginBottom="16dp"
             android:padding="10dp"
+            android:textColorHint="#4E4E4E"
             tools:ignore="HardcodedText"
             android:background="@drawable/edittext_border"
             android:layout_below="@id/bsu" />
@@ -156,6 +159,7 @@
             android:inputType="number"
             android:layout_marginBottom="16dp"
             android:padding="10dp"
+            android:textColor="#4E4E4E"
             tools:ignore="HardcodedText"
             android:background="@drawable/edittext_border"
             android:layout_below="@id/dp" />
@@ -201,7 +205,8 @@
             android:layout_below="@id/cps"
             android:layout_marginBottom="16dp"
             android:background="@drawable/edittext_border"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:textColorHint="#4E4E4E"/>
 <!--        End second dropdown-->
 <!--        Start Third dropdown-->
         <TextView
