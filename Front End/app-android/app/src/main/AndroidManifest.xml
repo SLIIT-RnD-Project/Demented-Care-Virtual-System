@@ -17,10 +17,7 @@
         android:theme="@style/Theme.DementedCare"
         tools:targetApi="31">
         <activity
-            android:name=".AIPredictionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ViewMoreActivity"
+
             android:exported="false" />
         <activity
             android:name=".Doctordetails"
@@ -47,7 +44,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".PatientHealthDetails"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
