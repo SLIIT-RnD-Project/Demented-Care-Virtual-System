@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dropdown_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Default state -->
+    <item android:state_enabled="true" android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#FFFFFF" /> <!-- Background color when not pressed -->
+                    <corners android:radius="4dp" /> <!-- Corner radius, adjust as needed -->
+                </shape>
+            </item>
+            <item android:right="10dp">
+                <bitmap android:gravity="end|center_vertical" android:src="@drawable/ic_dropdown" /> <!-- Dropdown arrow icon on the right -->
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Pressed state -->
+    <item android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#E0E0E0" /> <!-- Background color when pressed -->
+                    <corners android:radius="4dp" /> <!-- Corner radius, adjust as needed -->
+                </shape>
+            </item>
+            <item android:right="10dp">
+                <bitmap android:gravity="end|center_vertical" android:src="@drawable/ic_dropdown" /> <!-- Dropdown arrow icon on the right -->
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Disabled state -->
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#E0E0E0" /> <!-- Background color when disabled -->
+                    <corners android:radius="4dp" /> <!-- Corner radius, adjust as needed -->
+                </shape>
+            </item>
+            <item android:right="10dp">
+                <bitmap android:gravity="end|center_vertical" android:src="@drawable/ic_dropdown_disabled" /> <!-- Disabled dropdown arrow icon on the right -->
+            </item>
+        </layer-list>
+    </item>
+</selector>

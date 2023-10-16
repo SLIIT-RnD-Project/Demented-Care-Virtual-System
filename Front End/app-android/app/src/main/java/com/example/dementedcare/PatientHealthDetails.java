@@ -47,7 +47,7 @@ public class PatientHealthDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to open AIPredictionActivity
-                Intent intent = new Intent(PatientHealthDetails.this, AIPredictionActivity.class);
+                Intent intent = new Intent(PatientHealthDetails.this, predictform.class);
                 startActivity(intent);
             }
         });

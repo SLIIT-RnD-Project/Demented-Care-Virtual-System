@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".predictform"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp">
+
+        <!-- Main Heading -->
+        <TextView
+            android:id="@+id/Mainheadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Health Prediction"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#7876E1" />
+
+        <!-- Image -->
+
+
+
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="76dp"
+            />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="43"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/Age" />
+
+        <!-- First Name -->
+        <TextView
+            android:id="@+id/rbp"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Resting Blood Pressure"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etAge"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:id="@+id/etRbp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="120/80 mmHg"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/rbp" />
+
+        <!-- Last Name -->
+        <TextView
+            android:id="@+id/chl"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Cholesterol Level"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etRbp"
+            android:layout_marginTop="16dp"
+
+            />
+
+        <EditText
+            android:id="@+id/etChl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chl"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:hint="200 mg/dL"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Contact Number -->
+        <TextView
+            android:id="@+id/bsu"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Maximum Heart Rate Achieved"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/etChl"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:id="@+id/etconnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/bsu" />
+<!--      ========================================================== -->
+        <TextView
+            android:id="@+id/dp"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="ST Depression Induced by Exercise Relative to Rest"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/etconnum"
+            android:layout_marginTop="16dp"
+
+            />
+
+        <EditText
+            android:id="@+id/etDp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/dp" />
+<!--       ============================================================ -->
+
+<!--      Start Drop down   -->
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/etDp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etGender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/gender"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+<!--        End dropdowns-->
+<!--        Second dropdown-->
+        <TextView
+            android:id="@+id/cps"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Chest Pain Type"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/etGender"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etCps"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/cps"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+<!--        End second dropdown-->
+<!--        Start Third dropdown-->
+        <TextView
+            android:id="@+id/fbs"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Fasting Blood Sugar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etCps"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etFbs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/fbs"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+<!--        End Third dropdown-->
+<!--        Start Fourth DropDown-->
+        <TextView
+            android:id="@+id/ecg"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Resting ECG Results"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etFbs"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etEcg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/ecg"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+<!--        End Fourth DropDown-->
+<!--        Start Fifth DropDown-->
+        <TextView
+            android:id="@+id/eia"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Exercise-Induced Angina"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etEcg"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etEia"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/eia"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+
+<!--        End Fifth DropDown-->
+<!--        Start Sixth DropDown-->
+
+        <TextView
+            android:id="@+id/peakex"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Slope of the Peak Exercise ST Segment"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etEia"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etPeakEX"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/peakex"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+<!--        End Sixth DropDown-->
+<!--         Start Seventh DropDown-->
+        <TextView
+            android:id="@+id/flu"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Number of Major Vessels Colored by Fluoroscopy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etPeakEX"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etFlu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/flu"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+<!--         End Seventh DropDown-->
+<!--        Start last DropDown-->
+        <TextView
+            android:id="@+id/thresult"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Thallium Stress TestResult"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/etFlu"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/etthreresult"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/thresult"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="8dp" />
+<!--        End last DropDown-->
+
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etthreresult"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#020215"
+            android:padding="10dp"
+            android:text="Predict"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btncansel"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSubmit"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/delete_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:text="Cansel"
+            app:backgroundTint="#E91E63"
+            android:textColor="@color/white"
+            android:drawableTint="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </RelativeLayout>
+</ScrollView>
