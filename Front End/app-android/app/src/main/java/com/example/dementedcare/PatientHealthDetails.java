@@ -1,39 +1,13 @@
 package com.example.dementedcare;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.os.Bundle;
-//import android.support.annotation.NonNull;
-
-import android.widget.TextView;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import android.widget.Button;
-import android.view.View;
-
-
-
-public class PatientHealthDetails extends AppCompatActivity {
-
-    private DatabaseReference mDatabase;
-    private TextView tempTextView;
-    private TextView bloodPressureTextView;
-    private TextView heartRateTextView;
-    private TextView bloodO2TextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_health_details);
 
-        // Initialize Firebase Database
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("health_device");
 
+<<<<<<< HEAD
         // Initialize TextView elements
         tempTextView = findViewById(R.id.temp);
         bloodPressureTextView = findViewById(R.id.bloodox);
@@ -80,4 +54,6 @@ public class PatientHealthDetails extends AppCompatActivity {
             }
         });
     }
+=======
+>>>>>>> 2eff029f4d434cdd8907039ebcade89d63ddd68f
 }
