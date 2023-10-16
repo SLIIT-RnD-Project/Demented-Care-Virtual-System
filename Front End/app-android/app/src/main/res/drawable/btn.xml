@@ -1,0 +1,8 @@
+<!-- custom_button_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid Background Color -->
+    <item android:drawable="@drawable/btn_background" />
+
+    <!-- Image on top of the background -->
+    <item android:drawable="@drawable/doctor" />
+</layer-list>

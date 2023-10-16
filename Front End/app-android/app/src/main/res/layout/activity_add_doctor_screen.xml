@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddDoctorScreen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Mainheadding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add New Employee"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#7876E1"/>
+
+
+        <!-- First Name -->
+        <TextView
+            android:id="@+id/firstnametext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/Mainheadding"/>
+
+        <EditText
+            android:id="@+id/etfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your first name..."
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/firstnametext" />
+
+        <!-- Last Name -->
+        <TextView
+            android:id="@+id/lastnametext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/etfirstname"/>
+
+        <EditText
+            android:id="@+id/etlastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your last name..."
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/lastnametext" />
+
+        <!-- Email Address -->
+        <TextView
+            android:id="@+id/emailtxt"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/etlastname"/>
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email address..."
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/emailtxt" />
+
+        <!-- Password -->
+        <TextView
+            android:id="@+id/passwordtxt"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="15sp"
+            android:layout_below="@+id/etemail"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/passwordtxt"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"/>
+        <!--        contact number-->
+        <TextView
+            android:id="@+id/contacttext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/etpassword"/>
+
+        <EditText
+            android:id="@+id/etconnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your mobile number..."
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText"
+            android:background="@drawable/edittext_border"
+            android:layout_below="@id/contacttext" />
+
+        <!-- Job Role -->
+        <TextView
+            android:id="@+id/tvheding"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etconnum"
+            android:text="Please provide me with the job role "
+            android:textSize="15sp"
+            tools:ignore="HardcodedText"
+            android:textStyle="bold"/>
+
+
+        <!-- RadioGroup for Job Role -->
+        <RadioGroup
+            android:id="@+id/radioGroupOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/tvheding"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp">
+
+            <!-- Three RadioButtons -->
+            <RadioButton
+                android:id="@+id/radioButtonOption1"
+                android:layout_width="317dp"
+                android:layout_height="wrap_content"
+                android:text=" Admin"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Doctor"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nurse"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:backgroundTint="#7876E1"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupOptions"
+            android:padding="10dp"
+            android:text="submit"
+            android:textSize="25sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>

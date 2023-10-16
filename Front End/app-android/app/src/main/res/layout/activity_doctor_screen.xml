@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorScreen">
+
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:text="Doctor Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- First Row -->
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_below="@+id/topTextView"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+
+        android:padding="8dp">
+
+        <!-- First Button -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Evaluate emotions via voice."
+            android:textSize="20sp"
+            app:backgroundTint="#17BFB4" /> <!-- Set your desired background color here -->
+
+        <!-- Second Button -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Assessing the health of patients."
+            android:textSize="20sp"
+            app:backgroundTint="#0C827A" /> <!-- Set your desired background color here -->
+    </LinearLayout>
+
+    <!-- Second Row -->
+    <!-- Second Row -->
+    <LinearLayout
+        android:layout_width="218dp"
+        android:layout_height="242dp"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="-40dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Third Button -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Check patient’s emotion by voice"
+            android:textSize="20sp"
+            app:backgroundTint="#0C827A" />
+
+        <!-- Fourth Button -->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+{"intents":
+
+    [
+        {
+            "tag":"Generalized_Anxiety_Disorder",
+            "input":["what is Generalized Anxiety Disorder?","Generalized Anxiety Disorder","what is GAD?","GAD?"],
+            "responses":["Generalized Anxiety Disorder (GAD) is a chronic anxiety disorder characterized by excessive and persistent worry and anxiety about various aspects of life. The anxiety and worry associated with GAD are often disproportionate to the actual situation and can be difficult to control. The symptoms of GAD typically persist for at least six months and can significantly impact a person's daily functioning and quality of life."]
+        },
+        {
+            "tag":"Panic_disorder",
+            "input":["what is Panic Disorder?"],
+            "responses":["Panic Disorder is an anxiety disorder characterized by recurrent and unexpected panic attacks. These attacks involve sudden and intense feelings of fear or terror, accompanied by physical symptoms such as a rapid heart rate, shortness of breath, chest pain, and a sense of impending doom."]
+        },
+        {
+            "tag":"Social_Anxiety_Disorder",
+            "input":["what is Social Anxiety Disorder?"],
+            "responses":["Social Anxiety Disorder, also known as social phobia, is an anxiety disorder characterized by an intense and persistent fear of social or performance situations. Individuals with this disorder experience extreme self-consciousness and fear of being judged or embarrassed, leading to avoidance of social interactions or distress during such situations."]
+        },
+        {
+            "tag":"Specific_Phobias",
+            "input":["what is Specific Phobias?"],
+            "responses":["Specific Phobias are anxiety disorders characterized by excessive and irrational fears of specific objects, situations, or activities. Common examples include fear of heights, animals, flying, or blood. These phobias can cause significant distress and avoidance behavior, impacting daily life and functioning. Treatment options include therapy and gradual exposure techniques."]
+        },
+        {
+            "tag":"Obsessive_Compulsive_Disorder",
+            "input":["what is Obsessive Compulsive Disorder?","what is Obsessive-Compulsive Disorder?","Obsessive-Compulsive Disorder"],
+            "responses":["Obsessive-Compulsive Disorder (OCD) is an anxiety disorder characterized by the presence of recurring intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions). People with OCD often feel compelled to engage in these rituals to alleviate anxiety or prevent perceived harm. Treatment typically involves therapy and/or medication."]
+        },
+        {
+            "tag":"Post_Traumatic_Stress",
+            "input":["what is Post Traumatic Stress Disorder?","what is Post-Traumatic Stress Disorder?","what is Post-Traumatic Stress?"],
+            "responses":["Post-Traumatic Stress Disorder (PTSD) is an anxiety disorder that can develop after experiencing or witnessing a traumatic event. Symptoms may include intrusive memories, nightmares, flashbacks, avoidance of triggers, heightened arousal, and negative changes in mood and cognition. Treatment options include therapy, medication, and support groups."]
+        },
+        {
+            "tag":"Major_Depressive_Disorder",
+            "input":["what is Major Depressive Disorder","Major Depressive Disorder","what is MDD?"],
+            "responses":["Major Depressive Disorder (MDD), also known as clinical depression, is a mood disorder characterized by persistent feelings of sadness, hopelessness, and a loss of interest or pleasure in activities. Symptoms may include changes in appetite, sleep disturbances, fatigue, difficulty concentrating, and thoughts of self-harm. Treatment often involves therapy and medication."]
+        },
+        {
+            "tag":"Bipolar_Disorder",
+            "input":["what is Bipolar Disorder?","Bipolar Disorder"],
+            "responses":["Bipolar Disorder is a mood disorder characterized by extreme and fluctuating shifts in mood, energy levels, and activity levels. It involves episodes of mania, marked by elevated mood, increased energy, impulsivity, and reduced need for sleep, as well as episodes of depression, characterized by persistent sadness and loss of interest. Treatment often involves mood stabilizers and therapy."]
+        },
+        {
+            "tag":"Mood_Disorders",
+            "input":["what is Mood Disorders","Mood Disorders"],
+            "responses":["Mood Disorders are a category of mental health conditions characterized by disturbances in mood or emotional states. Common mood disorders include Major Depressive Disorder, Bipolar Disorder, and Persistent Depressive Disorder. These disorders involve significant changes in mood that can impact daily functioning and overall well-being. Treatment may involve therapy and medication."]
+        },
+        {
+            "tag":"Persistent_Depressive_Disorder",
+            "input":["what is Persistent Depressive Disorder","Persistent Depressive Disorder"],
+            "responses":["Persistent Depressive Disorder, also known as dysthymia, is a chronic form of depression characterized by a persistently depressed mood that lasts for at least two years. Individuals with this disorder may experience a range of depressive symptoms, such as low self-esteem, sleep disturbances, poor appetite, and low energy. Treatment typically involves therapy and, in some cases, medication."]
+        },
+        {
+            "tag":"Schizophrenia",
+            "input":["what is Schizophrenia","Schizophrenia"],
+            "responses":["Schizophrenia is a chronic and severe mental disorder characterized by a distorted perception of reality, disorganized thinking, and abnormal social behavior. Symptoms may include hallucinations, delusions, disorganized speech, reduced emotional expression, and cognitive difficulties. Treatment often involves a combination of antipsychotic medications, therapy, and support services."]
+        },
+        {
+            "tag":"Schizoaffective_Disorder",
+            "input":["what is Schizoaffective Disorder","Schizoaffective Disorder"],
+            "responses":["Schizoaffective Disorder is a mental disorder characterized by a combination of symptoms of schizophrenia, such as hallucinations and delusions, along with symptoms of a mood disorder, such as mania or depression. Individuals with this disorder experience both psychotic and mood-related symptoms, which can vary in severity. Treatment often involves a combination of medications and therapy."]
+        },
+        {
+            "tag":"Borderline_Personality_Disorder",
+            "input":["what is Borderline Personality Disorder","Borderline Personality Disorder","what is BPD?"],
+            "responses":["Borderline Personality Disorder (BPD) is a mental disorder characterized by unstable moods, intense and unstable relationships, impulsivity, and a distorted self-image. Individuals with BPD often experience fear of abandonment, self-destructive behaviors, and emotional instability. Treatment usually involves therapy, such as dialectical behavior therapy (DBT), and sometimes medication."]
+        },
+        {
+            "tag":"Narcissistic_Personality_Disorder",
+            "input":["what is Narcissistic Personality Disorder","Narcissistic Personality Disorder","what is NPD?"],
+            "responses":["Narcissistic Personality Disorder (NPD) is a mental disorder characterized by an exaggerated sense of self-importance, a constant need for admiration, and a lack of empathy for others. Individuals with NPD often have a grandiose sense of self and seek constant validation and attention. Treatment is challenging due to the inherent difficulties in acknowledging and treating the disorder."]
+        },
+        {
+            "tag":"Antisocial_Personality_Disorder",
+            "input":["what is Antisocial Personality Disorder","Antisocial Personality Disorder","what is ASPD?","ASPD"],
+            "responses":["Antisocial Personality Disorder (ASPD) is a mental disorder characterized by a pervasive pattern of disregard for the rights of others and a lack of empathy. Individuals with ASPD may engage in manipulative, deceitful, or aggressive behaviors, often disregarding societal norms and rules. Treatment options are limited, focusing on managing symptoms and reducing harmful behaviors."]
+        },
+        {
+            "tag":"Avoidant_Personality_Disorder",
+            "input":["what is Avoidant Personality Disorder","Avoidant Personality Disorder","what is AVPD?","AVPD"],
+            "responses":["Avoidant Personality Disorder (AvPD) is a mental disorder characterized by pervasive feelings of social inhibition, inadequacy, and hypersensitivity to negative evaluation. Individuals with AvPD may avoid social situations due to fear of rejection or criticism, leading to significant impairment in daily functioning. Treatment often involves therapy to improve self-esteem and social skills."]
+        },
+        {
+            "tag":"Anorexia_Nervosa",
+            "input":["what is Anorexia Nervosa","Anorexia Nervosa?"],
+            "responses":["Anorexia Nervosa is an eating disorder characterized by an intense fear of gaining weight and a distorted body image. Individuals with anorexia severely restrict their food intake, leading to significant weight loss and often resulting in physical and psychological complications. Treatment involves therapy, nutritional counseling, and medical monitoring."]
+        },
+        {
+            "tag":"Bulimia_Nervosa",
+            "input":["what is Bulimia Nervosa?","Bulimia Nervosa"],
+            "responses":["Bulimia Nervosa is an eating disorder characterized by recurrent episodes of binge eating, followed by compensatory behaviors such as self-induced vomiting, excessive exercise, or the misuse of laxatives or diuretics. Individuals with bulimia may have a preoccupation with body shape and weight. Treatment typically involves therapy, nutritional counseling, and medical support."]
+        },
+        {
+            "tag":"Binge_Eating_Disorder",
+            "input":["what is Binge Eating Disorder","Binge Eating Disorder"],
+            "responses":["Binge Eating Disorder (BED) is an eating disorder characterized by recurrent episodes of excessive food consumption accompanied by a lack of control over eating. Individuals with BED often eat rapidly, to the point of discomfort, and experience feelings of guilt or shame afterward. Treatment includes therapy, support groups, and nutritional counseling."]
+        },
+        {
+            "tag":"Substance_Use_Disorder",
+            "input":["what is Substance Use Disorder","what is SUD","SUD?","Substance Use Disorder"],
+            "responses":["Substance Use Disorder (SUD) is a mental health disorder characterized by a pattern of harmful or problematic use of substances, such as drugs or alcohol. It involves impaired control, continued use despite negative consequences, and cravings. Treatment may involve therapy, support groups, detoxification, and medication-assisted treatments."]
+        },
+        {
+            "tag":"Alcohol_Use_Disorder",
+            "input":["what is Alcohol Use Disorder","Alcohol Use Disorder","what is AUD","AUD?"],
+            "responses":["Alcohol Use Disorder (AUD) is a chronic condition characterized by an impaired ability to control or stop drinking, despite negative consequences. It involves a problematic pattern of alcohol consumption that can lead to physical and psychological dependence. Treatment options include therapy, support groups, medications, and detoxification programs."]
+        },
+        {
+            "tag":"Opioid_Use_Disorder",
+            "input":["what is Opioid Use Disorder?","Opioid Use Disorder"],
+            "responses":["Opioid Use Disorder (OUD) is a substance use disorder characterized by a problematic pattern of opioid use, leading to significant impairment or distress. It involves a strong urge to use opioids, difficulty controlling use, and withdrawal symptoms upon cessation. Treatment options include medication-assisted therapy, counseling, and support groups."]
+        },
+        {
+            "tag":"Gambling_Disorder",
+            "input":["what is Gambling Disorder?","Gambling Disorder"],
+            "responses":["Gambling Disorder is a behavioral addiction characterized by persistent and recurrent gambling behavior that leads to significant distress and impairment. Individuals with this disorder experience an inability to control or stop gambling, resulting in negative consequences. Treatment typically involves therapy, support groups, and interventions to reduce gambling-related behaviors."]
+        },
+        {
+            "tag":"Dementia",
+            "input":["what is Dementia","Dementia"],
+            "responses":["Dementia is a general term for a decline in cognitive abilities severe enough to interfere with daily functioning and independence. It is characterized by memory loss, impaired thinking, reasoning, and behavior changes. Common types include Alzheimer's disease, vascular dementia, and Lewy body dementia. Treatment focuses on managing symptoms and providing support."]
+        },
+        {
+            "tag":"Autism_Spectrum_Disorder",
+            "input":["what is Autism Spectrum Disorder?","Autism Spectrum Disorder","what is ASD?","ASD?"],
+            "responses":["Autism Spectrum Disorder (ASD) is a developmental disorder characterized by challenges in social interaction, communication, and repetitive behaviors. Individuals with ASD may have difficulties with social communication, sensory sensitivities, and exhibit restricted and repetitive patterns of behavior. Treatment often involves early intervention, behavioral therapy, and support services."]
+        },
+        {
+            "tag":"Insomnia_Disorder",
+            "input":["what is Insomnia Disorder?","Insomnia Disorder"],
+            "responses":["Insomnia Disorder is a sleep disorder characterized by persistent difficulty falling asleep, staying asleep, or experiencing non-restorative sleep, despite adequate opportunity to sleep. It can result in daytime fatigue, impaired functioning, and mood disturbances. Treatment options include behavioral interventions, lifestyle changes, and sometimes medication."]
+        },
+        {
+            "tag":"Narcolepsy",
+            "input":["what is Narcolepsy?","Narcolepsy"],
+            "responses":["Narcolepsy is a neurological disorder characterized by excessive daytime sleepiness, sudden and uncontrollable episodes of falling asleep (known as sleep attacks), and disturbances in sleep-wake cycles. It may also involve symptoms such as cataplexy (sudden loss of muscle tone), sleep paralysis, and vivid hallucinations. Treatment typically involves medication and lifestyle adjustments."]
+        },
+        {
+            "tag":"Sleep_Apnea",
+            "input":["what is Sleep Apnea?","Sleep Apnea"],
+            "responses":["Sleep Apnea is a sleep disorder characterized by pauses in breathing or shallow breathing during sleep. These interruptions in breathing can lead to frequent awakenings, poor sleep quality, and daytime sleepiness. Obstructive Sleep Apnea is the most common type, caused by the relaxation and obstruction of the airway during sleep. Treatment options include continuous positive airway pressure (CPAP) therapy and lifestyle changes."]
+        },
+        {
+            "tag":"goodbye",
+            "input":["Bye","Good Bye"],
+            "responses":["Bye, Have a nice day"]
+        }
+    ]
+}
