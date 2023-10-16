@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1021189462166",
+    "project_id": "a2-demented-care",
+    "storage_bucket": "a2-demented-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021189462166:android:53648dd4e9d1a9abbb4ab7",
+        "android_client_info": {
+          "package_name": "com.example.dementedcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021189462166-c512aaefdea0997i3k08kojndomq3ofv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dementedcare",
+            "certificate_hash": "0bd02265b3ac033dd7374d578a892a25b824f30d"
+          }
+        },
+        {
+          "client_id": "1021189462166-28660tjp5k45qehkpp8t41l80q31kgb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuLyvm8FJZMlsGOgweuRyJdCLobsrm0PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021189462166-28660tjp5k45qehkpp8t41l80q31kgb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

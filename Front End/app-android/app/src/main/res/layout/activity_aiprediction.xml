@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AIPredictionActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="317dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="414dp"
+                android:layout_height="333dp"
+                app:srcCompat="@drawable/aipredictionimg1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-3dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="414dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bacground_item"
+                    android:backgroundTint="#7876E2"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+
+                    tools:layout_editor_absoluteY="325dp">
+                    >
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="AI Prediction Result"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="You Can check Patient Health Condition "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn"
+                        android:layout_width="360dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnSubmit"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="170dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="36dp"
+
+                        android:background="@drawable/delete_btn"
+                        android:clickable="true"
+                        android:drawableTint="@color/black"
+                        android:focusable="true"
+                        android:padding="10dp"
+                        android:text="Check Agin"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:backgroundTint="#9C27B0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
