@@ -1,83 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_header_selector"
     tools:context=".DoctorScreen">
 
-
-    <TextView
-        android:id="@+id/topTextView"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:padding="16dp"
-        android:text="Doctor Dashboard"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:layout_gravity="center"
+        android:src="@drawable/imgbg"
+        android:scaleType="fitXY"
+        android:backgroundTint="#819DBA"
+        android:adjustViewBounds="true"/>
 
-    <!-- First Row -->
-    <LinearLayout
-        android:id="@+id/layout1"
+    <!-- Text Section -->
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="223dp"
-        android:layout_below="@+id/topTextView"
-        android:layout_marginTop="23dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:text="Doctor Dashboard"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#7876E1"
+        android:padding="10dp"
+        android:textStyle="bold"/>
 
-        android:padding="8dp">
-
-        <!-- First Button -->
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_bg"
-            android:text="Evaluate emotions via voice."
-            android:textSize="20sp"
-            app:backgroundTint="#17BFB4" /> <!-- Set your desired background color here -->
-
-        <!-- Second Button -->
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_bg"
-            android:text="Assessing the health of patients."
-            android:textSize="20sp"
-            app:backgroundTint="#0C827A" /> <!-- Set your desired background color here -->
-    </LinearLayout>
-
-    <!-- Second Row -->
-    <!-- Second Row -->
     <LinearLayout
-        android:layout_width="218dp"
-        android:layout_height="242dp"
-        android:layout_below="@id/layout1"
-        android:layout_marginTop="-40dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacground_item"
+        android:backgroundTint="#7876E2"
 
-        <!-- Third Button -->
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="170dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_bg"
-            android:text="Check patient’s emotion by voice"
-            android:textSize="20sp"
-            app:backgroundTint="#0C827A" />
+        tools:ignore="Orientation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <!-- Fourth Button -->
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/button"
+                        android:layout_width="157dp"
+                        android:layout_height="168dp"
+                        android:background="@drawable/btn_background"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/doctor"
+                        android:textColor="#E0EEF9"
+                        android:textStyle="bold"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="32dp"
+                        tools:layout_editor_absoluteY="11dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="Manage Doctors"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/button"
+                        app:layout_constraintEnd_toEndOf="@+id/button"
+                        app:layout_constraintTop_toBottomOf="@id/button" />
+
+                    <ImageButton
+                        android:id="@+id/button2"
+                        android:layout_width="157dp"
+                        android:layout_height="168dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/btn2"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/nurse"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/button"
+                        app:layout_constraintTop_toTopOf="@id/button"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="Manage Nurse"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/button2"
+                        app:layout_constraintEnd_toEndOf="@+id/button2"
+                        app:layout_constraintTop_toBottomOf="@id/button2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/managepatients"
+                        android:layout_width="157dp"
+                        android:layout_height="168dp"
+                        android:background="@drawable/btn_background"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/patients2"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="32dp"
+                        tools:layout_editor_absoluteY="11dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="Manage Patients"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/managepatients"
+                        app:layout_constraintEnd_toEndOf="@+id/managepatients"
+                        app:layout_constraintTop_toBottomOf="@id/managepatients" />
+
+                    <ImageButton
+                        android:id="@+id/trackingdevice"
+                        android:layout_width="157dp"
+                        android:layout_height="168dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/btn2"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/location"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/managepatients"
+                        app:layout_constraintTop_toTopOf="@id/managepatients"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="Manage Tracking Device"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/trackingdevice"
+                        app:layout_constraintEnd_toEndOf="@+id/trackingdevice"
+                        app:layout_constraintTop_toBottomOf="@id/trackingdevice" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
 
     </LinearLayout>
 
 
-</RelativeLayout>
