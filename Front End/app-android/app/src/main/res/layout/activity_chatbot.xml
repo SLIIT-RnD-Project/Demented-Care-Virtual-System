@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chatbot"
+    android:background="@drawable/main_header_selector">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bot" />
+
+    <!-- RecyclerView to display chat messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/messageInputLayout"
+        android:layout_marginTop="10dp"
+    android:clipToPadding="false"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:scrollbars="vertical" />
+
+    <!-- RelativeLayout for the message input -->
+    <RelativeLayout
+        android:id="@+id/messageInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <!-- EditText for user input -->
+        <EditText
+            android:id="@+id/idEditMessage"
+            android:layout_width="352dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toLeftOf="@+id/idFABSend"
+            android:background="@drawable/edittext_border"
+            android:hint="Enter Message"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
+
+        <!-- FloatingActionButton for sending messages -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idFABSend"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="21dp"
+            android:backgroundTint="#673AB7"
+            android:src="@drawable/baseline_send_24"
+            app:fabCustomSize="45dp"
+            app:tint="#FFFFFF" />
+    </RelativeLayout>
+</RelativeLayout>
